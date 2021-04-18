@@ -1,0 +1,34 @@
+.left-panel{
+    width: 100%;
+    height: 577px;
+    background-color: #fde8e8;
+}
+.left-panel img{
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.sidebar{
+    margin-top: 20px;
+}
+.sidebar-menu{
+    color: #5400c2;
+    font-weight: 700;
+    margin-left: 45px;
+}
+.sidebar-menu:hover{
+    color: #b3004a;
+}
+.right-panel {
+    width: 100%;
+    height: 577px;
+    background-color: #e8fdf0;
+}
+.right-panel h3 {
+    text-align: center;
+    font-weight: 700;
+    color: #5400c2;
+    margin-top: 30px;
+}

@@ -1,0 +1,6 @@
+.header-container {
+    height: 800px;
+    position: relative;
+    background-image: linear-gradient(to bottom, white, #c9c8c8);
+    background-size: cover;
+}

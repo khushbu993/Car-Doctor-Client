@@ -1,0 +1,30 @@
+.appointment-list-card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(31, 29, 29, 0.589);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 70px;
+}
+
+.appointment-list-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(39, 38, 38, 0.555);
+}
+
+.list-img img{
+    width: 50px;
+    height: 50px;
+}
+.list-img button {
+    padding: 5px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fc3c3c;
+    color: white;
+    font-weight: 500;
+}
+.list-img:hover button {
+    color: #5400c2;
+}

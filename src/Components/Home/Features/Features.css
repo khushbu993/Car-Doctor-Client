@@ -1,0 +1,24 @@
+.features-container{
+    background-image: url(../../images/features-bg.jpg);
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    background-size: cover;
+    margin-top: -310px;
+    z-index: -1;
+}
+.feature-info {
+    margin-top: 425px;
+    margin-bottom: -360px;
+}
+.feature-icon {
+    font-size: 40px;
+    color: #46fa70;
+}
+.feature-icon:hover {
+    color: #ff0f0f;
+}
+.feature-text {
+    color: lightgrey;
+}
+

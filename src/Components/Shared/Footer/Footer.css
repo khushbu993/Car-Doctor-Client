@@ -1,0 +1,24 @@
+.footer-area {
+    background-image: url(../../images/service-repairBG.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.footer-area li {
+    padding-bottom: 10px;
+}
+
+.social-media .icon {
+    height: 40px;
+    width: 40px;
+    color: #009600;
+    border-radius: 50%;
+    border: 1px solid #f84545;
+    padding: 10px;
+}
+
+.social-media .active-icon {
+    background-color: #00ffc8;
+    color: rgb(255, 0, 0);
+}

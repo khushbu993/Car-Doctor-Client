@@ -1,0 +1,104 @@
+.brand-logo {
+    height: 150px;
+    background-color:rgb(191, 231, 247);
+    margin-top: 825px;
+    margin-bottom: 2px;
+}
+
+.brand-img {
+    margin-top: 45px;
+    margin-left: 50px;
+}
+.brand-img img {
+    width: 50%;
+}
+
+.brand1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand1 img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand1:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.brand2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand2 img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand2:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.brand3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand3 img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand3:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.brand4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand4 img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand4:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.brand5 {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand5 img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand5:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.brand6 {
+    position: relative;
+    overflow: hidden;
+}
+
+.brand6 img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand6:hover img {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
