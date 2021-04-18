@@ -14,7 +14,7 @@ const Slider = () => {
                 <div className="col-md-7 ">
                     <h1 style={{ fontSize: '100px' }}>Auto Repairing Services</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia provident rerum fugiat nemo vitae reprehenderit nostrum iusto quaerat veritatis exercitationem laboriosam, soluta est quasi, ad eum commodi facere, sequi neque?</p>
-                    <Link to="/" className="btn btn-brand"><span style={{color: 'whitesmoke', fontWeight: '600', border: 'none'}}>MAKE APPOINTMENT</span></Link>
+                    <Link to="/appointment" className="btn btn-brand"><span style={{color: 'whitesmoke', fontWeight: '600', border: 'none'}}>MAKE APPOINTMENT</span></Link>
                 </div>
             </div>
         </div>

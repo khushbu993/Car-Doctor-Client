@@ -8,8 +8,27 @@ import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 
 const Review = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    
+    //handle form submit
+    const onSubmit = data => {
+        const eventData = {
+            name: data.name,
+            designation: data.designation, 
+            description: data.description,
+        }
+        console.log(eventData);
+        const url = 'https://secure-cliffs-06319.herokuapp.com/addReview';
+        console.log(data);
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(eventData)
+        })
+        .then(res => console.log('server side response'))
+    };
     return (
         <div className="review-container container-fluid">
             <div className="row">
@@ -39,11 +58,12 @@ const Review = () => {
                                 {errors.name && <span className="text-danger">This field is required</span>}
                             </div>
                             <div className="form-group">
-                                <input type="text" {...register("email", { required: true })} name="email" placeholder="Your Email" className="form-control" />
-                                {errors.email && <span className="text-danger">This field is required</span>}
+                                <input type="text" {...register("designation", { required: true })} name="designation" placeholder="Your Designation" className="form-control" />
+                                {errors.designation && <span className="text-danger">This field is required</span>}
                             </div>
                             <div className="form-group">
-                                <textarea name="message" rows="10" cols="30" className="form-control" placeholder="Description"></textarea>
+                                <textarea name="description" {...register("description", { required: true })} rows="10" cols="30" className="form-control" placeholder="Description"></textarea>
+                                {errors.description && <span className="text-danger">This field is required</span>}
                             </div>
                             <div className="submit-btn">
                                 <input type="submit" value="Submit" />

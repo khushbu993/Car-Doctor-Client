@@ -17,18 +17,20 @@ import OrderList from "./Components/Admin/OrderList/OrderList";
 import AddService from "./Components/Admin/AddService/AddService";
 import MakeAdmin from "./Components/Admin/MakeAdmin/MakeAdmin";
 import ManageServices from "./Components/Admin/ManageServices/ManageServices";
+import PrivateRoute from "./Components/Login/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
+  const [singleService, setSingleService] = useState({});
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={{value1: [loggedInUser, setLoggedInUser], value2: [singleService, setSingleService]}}>
       <Router>
         <Switch>
-          <Route path="/appointment">
+          <PrivateRoute path="/appointment">
             <Appointment />
-          </Route>
+          </PrivateRoute>
           <Route path="/appointmentList">
             <AppointmentList />
           </Route>
@@ -38,9 +40,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/admin">
+          <PrivateRoute path="/admin">
             <Admin />
-          </Route>
+          </PrivateRoute>
           <Route path="/orderList">
             <OrderList />
           </Route>
